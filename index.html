@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghar Kharch App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div class="logo">
+                <a href="">GHAR KHARCH APP</a>
+                <div class="burger" onclick="nav()">
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#" onclick="localStorage.clear(); allStorage()">Reset</a></li>
+                    <li><a href="mailto: kavyasinghlodhi@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="modal">
+            <div class="cross-btn" onclick="modal(0)">X</div>
+            <div class="form">
+                <span>Enter Expense Name :</span><br>
+                <input type="text"><br>
+                <span>Enter Expense Price :</span><br>
+                <input type="number"><br>
+                <button onclick="adda()">ADD</button>
+            </div>
+        </section>
+        <!-- <section class="modal">
+            <div class="cross-btn" onclick="modal(1)">X</div>
+            <form action="">
+                <span>Enter Your Total Income :</span><br>
+                <input type="text"><br>
+                <button>ADD</button>
+            </form>
+        </section> -->
+        <section class="boxes">
+            <div class="box" style="background: rgb(231, 231, 231);">
+                <span class="para">Total Expeses</span>
+                <span class="heading">00</span>
+            </div>
+            <!-- <div class="box" style="background: rgb(241, 255, 241);">
+                <span class="para">Total Income. <b><u onclick="modal(1)">change</u></b></span>
+                <span class="heading">00</span>
+            </div> -->
+            <div class="box" style="background: rgb(236, 253, 236);">
+                <span class="para">Date. <b><u onclick="localStorage.clear(); allStorage()">Remove All</u></b></span>
+                <span class="heading day">00</span>
+            </div>
+        </section>
+        <section class="add-btn" onclick="modal(0)">+</section>
+        <br><br>
+        <section class="table">
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
